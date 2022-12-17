@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+@font-face {
+	src: url(font/BauhausRegular.ttf);
+	font-family: flex;
+}
+
+#titulo{
+    font-family: flex;
+    color: white;
+}
+
+header {
+    background-color: #001e3a;
+    width: 100%;
+    margin-top: -1.4em;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+#buscaSerie {
+    width: 20%;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 1.5em;
+    font-size: 16px;
+    padding-left: 0.5em;
+    outline: none;
+    transition-duration: 0.5s;
+}
+
+#buscaSerie[type=text]:focus {
+    box-shadow: 0 7px 10px 0 rgba(255, 255, 255, 0.5),0 17px 50px 0 rgba(255, 255, 255, 0.19);
+}
+
+#btnBuscar {
+    font-size: 16px;
+    border-radius: 1.5em;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    outline: none;
+    height: 1.7em;
+    transition-duration: 0.3s;
+    
+}
+
+#btnBuscar:hover {
+    box-shadow: 0 7px 10px 0 rgba(255, 255, 255, 0.24),0 17px 50px 0 rgba(255, 255, 255, 0.19);
+}
+
+#btnBuscar:active {
+    color: black;
+    background-color: white;
+    transition-duration: 0.0s;
+}
+
+.semResposta {
+    text-align: center;
+    visibility: hidden;
+}
+
+#informacoesSerie {
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border: 5px solid #001e3a;
+    border-radius: 1.5em;
+    width: 75%;
+    visibility: hidden;
+    
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+
+	justify-content: space-evenly;
+}
+
+#nomeSerie {
+    text-align: left;
+}
+
+#informacoesGerais {
+    text-align: justify;
+    max-width: 25em;
+}
+
+/* ELENCO */
+.elenco {
+    padding: 2em;
+    visibility: hidden;
+}
+.elenco .elenco-container {
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    margin-top: 0.5em;
+}
+.elenco .elenco-container .ator {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05), -4px -4px 10px rgba(0, 0, 0, 0.05);
+}
+.elenco .elenco-container .ator img {
+    width: 160px;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+.elenco .elenco-container .ator .nome {
+    font-weight: 600;
+    margin: 0.75em 1em 0 1em;
+}
+.elenco .elenco-container .ator .personagem {
+    margin: 0em 1em 1.5em 1em;
+}
+
+
+
+/* TEMPORADAS */
+.temporadas {
+    padding: 2em;
+    visibility: hidden;
+}
+.temporadas .temporadas-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5em;
+}
+.temporadas .temporadas-container .temporada {
+    display: flex;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05), -4px -4px 10px rgba(0, 0, 0, 0.05);
+}
+.temporadas .temporadas-container .temporada .poster img {
+    width: 200px;
+    display: block;
+    border-radius: 10px 0 0 10px;
+}
+.temporadas .temporadas-container .temporada .info {
+    padding: 1em;
+    padding-right: 2em;
+}
+.temporadas .temporadas-container .temporada .info h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+.temporadas .temporadas-container .temporada .info .subtitulo {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.temporadas .temporadas-container .temporada .info p {
+    text-align: justify;
+    margin-top: 1.5em;
+}
+
+
+
+
+/* EPISODIOS  */
+.episodios {
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    margin-top: 0.5em;
+}
+.episodios .episodio {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05), -4px -4px 10px rgba(0, 0, 0, 0.05);
+}
+.episodios .episodio .foto {
+    position: relative;
+}
+.episodios .episodio img {
+    width: 300px;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.botao {
+    display: inline-block;
+    margin-tOP: 1em;
+    padding: 0.5em 1em;
+    background-color: #001e3a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+}

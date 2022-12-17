@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mauricio Andreata - API TV Maze</title>
+    <link rel="stylesheet" type="text/css" href="estiloPaginaPrincipal.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Mauricio Andreata - API TV Maze</h1>
+        <input type="text" id="buscaSerie" name="buscaSerie" placeholder=" Digite uma série para buscar">
+        <button type="button" id="btnBuscar">Buscar</button>
+    </header> 
+
+    <h3 class="semResposta">Sem resultados encontrados :(</h3>
+    
+    <div id="informacoesSerie">
+        <div id="fotoPoster"></div>
+        <div id="informacoesGerais">
+            <h1 id="nomeSerie"></h2>
+            <h3 id="generosSerie"></h3>
+            <div id="sinopseSerie"></div>
+        </div>
+    </div>
+
+    <div class="elenco">
+        <h2>Elenco da Série</h2>
+        <div class="elenco-container">
+            <div class="ator">
+                <img />
+                <span class="nome">Nome</span>
+                <span class="personagem">Personagem</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="temporadas">
+        <h2>Temporadas</h2>
+        <div class="temporadas-container">
+            <div class="temporada">
+                <div class="poster"></div>
+                <div class="info">
+                    <h3>Temporada 3</h3>
+                    <div class="subtitulo"></div>
+                    <p class="sinopse"></p>
+                    <a href="#" class="botao" id="btn-1">Ver episódios</a>
+                    <div class="episodios" id="episodios-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="api.js"></script>
+</body>
+</html>
