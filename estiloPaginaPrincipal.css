@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
+    
 }
 
 @font-face {
@@ -58,18 +59,24 @@ header {
     transition-duration: 0.0s;
 }
 
+#informacoes{
+    margin-top: -1.3em;
+    background: linear-gradient(rgba(0,30,58,1) 0%, rgba(0,30,58,1) 95%, rgba(255,255,255,1) 100%);
+    padding-bottom: 2em;
+}
+
 .semResposta {
+    color: white;
     text-align: center;
     visibility: hidden;
 }
 
 #informacoesSerie {
+    color: white;
     margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
-    border: 5px solid #001e3a;
-    border-radius: 1.5em;
     width: 75%;
     visibility: hidden;
     

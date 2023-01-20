@@ -7,6 +7,12 @@ let divTemporadas = document.querySelector(".temporadas");
 
 btnBuscar.addEventListener("click", mostrarSerie);
 
+buscaSerie.addEventListener("keypress", function(e){
+    if(e.which == 13){
+        mostrarSerie();
+    }
+});
+
 function mostrarSerie(){
     let buscaAPI = buscaSerie.value.replace(" ", "+");
     
